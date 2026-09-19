@@ -1,0 +1,155 @@
+.row-card {
+  background: var(--bg-tile);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 11px 16px;
+  cursor: pointer;
+  transition: 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.row-card:hover {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.row-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--chalk-dim-2);
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.row-formula {
+  font-family: 'Fraunces', serif;
+  font-size: 15px;
+  color: var(--accent);
+  flex-shrink: 0;
+  min-width: 120px;
+}
+
+.row-title {
+  font-family: 'Fraunces', serif;
+  font-size: 15.5px;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.row-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.row-status--dev {
+  color: var(--chalk-yellow);
+}
+
+.row-status--soon {
+  color: var(--chalk-red);
+}
+
+.row-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--chalk-dim-2);
+  flex-shrink: 0;
+}
+
+.row-del-wrapper {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.row-del-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--chalk-dim-2);
+  font-size: 14px;
+  line-height: 1;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.row-del-btn:hover {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.row-del-confirm-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 4px;
+}
+
+.row-del-confirm-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #f87171;
+  white-space: nowrap;
+}
+
+.row-del-btn-confirm {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.row-del-btn-confirm:hover {
+  background: #dc2626;
+}
+
+.row-del-btn-cancel {
+  background: transparent;
+  color: var(--chalk-dim);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.row-del-btn-cancel:hover {
+  color: var(--chalk-white);
+  border-color: var(--chalk-dim);
+}
+
+@media (max-width: 640px) {
+  .row-formula {
+    display: none;
+  }
+  .row-card {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,39 @@
+.practice-item {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.practice-item:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.practice-item .practice-label {
+  font-family: 'Fraunces', serif;
+  font-size: 16.5px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--chalk-white);
+}
+
+.practice-item .practice-problem {
+  background: var(--bg-tile);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent, #f6c445);
+  border-radius: 3px;
+  padding: 14px 18px;
+  margin: 0 0 14px;
+  color: var(--chalk-white);
+  font-size: 14.5px;
+  line-height: 1.6;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.practice-item .practice-problem::-webkit-scrollbar {
+  display: none;
+}

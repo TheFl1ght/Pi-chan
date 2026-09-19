@@ -1,0 +1,16 @@
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 50px;
+  padding: 26px 20px 40px;
+  text-align: center;
+  color: var(--chalk-dim-2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+}
+
+.site-footer .fh {
+  font-family: 'Kalam', cursive;
+  color: var(--chalk-dim);
+  font-size: 14px;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,22 @@
+.admin-editable-input {
+  width: 100%;
+  background: var(--bg-tile);
+  border: 1px solid var(--accent, var(--chalk-yellow));
+  border-radius: 2px;
+  padding: 8px 10px;
+  color: var(--chalk-white);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.admin-editable-input:focus {
+  border-color: var(--chalk-yellow);
+}
+
+.admin-editable-input--single {
+  resize: none;
+}

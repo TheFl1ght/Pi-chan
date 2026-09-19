@@ -1,0 +1,6 @@
+.no-results {
+  font-family: 'Kalam', cursive;
+  color: var(--chalk-dim);
+  font-size: 15px;
+  padding: 18px 0;
+}

@@ -1,0 +1,32 @@
+.example-box {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-top: 22px;
+}
+
+.example-box .example-label {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--chalk-white);
+}
+
+.example-box .example-problem {
+  font-family: 'Kalam', cursive;
+  color: var(--chalk-dim);
+  font-size: 15px;
+  margin: 0 0 14px;
+  line-height: 1.5;
+}
+
+.example-box .example-solution-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}

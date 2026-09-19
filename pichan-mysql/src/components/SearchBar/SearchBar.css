@@ -1,0 +1,25 @@
+.search-wrap {
+  margin: 20px 0 26px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 440px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 11px 14px;
+  color: var(--chalk-white);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  outline: none;
+  transition: 0.15s;
+}
+
+.search-input::placeholder {
+  color: var(--chalk-dim-2);
+}
+
+.search-input:focus {
+  border-color: var(--accent, var(--chalk-yellow));
+}

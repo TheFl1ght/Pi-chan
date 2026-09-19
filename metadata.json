@@ -1,0 +1,6 @@
+{
+  "name": "Пи-чан — математика и физика",
+  "description": "Интерактивный справочник по школьной, олимпиадной и высшей математике, физике с поддержкой формул KaTeX и режимом редактирования.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

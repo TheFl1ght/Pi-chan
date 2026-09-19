@@ -1,0 +1,89 @@
+.topbar {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-header);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.topbar-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 14px 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  cursor: pointer;
+  color: var(--chalk-white);
+}
+
+.logo .pi {
+  font-size: 28px;
+  color: var(--chalk-yellow);
+}
+
+.topnav {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+}
+
+.topnav a {
+  padding: 7px 12px;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  color: var(--chalk-dim);
+  transition: 0.15s;
+}
+
+.topnav a:hover {
+  color: var(--chalk-white);
+  border-color: var(--border-light);
+}
+
+.topnav a.active {
+  color: var(--chalk-yellow);
+  border-color: var(--border-light);
+  background: rgba(228, 192, 95, 0.06);
+}
+
+.forum-btn {
+  margin-left: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  color: var(--chalk-teal);
+  border: 1px solid var(--chalk-teal);
+  padding: 7px 12px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.15s;
+}
+
+.forum-btn:hover {
+  background: rgba(127, 191, 174, 0.08);
+}
+
+.forum-btn .soon {
+  font-family: 'Kalam', cursive;
+  font-size: 11px;
+  color: var(--bg);
+  background: var(--chalk-teal);
+  padding: 1px 6px;
+  border-radius: 8px;
+  line-height: 1.4;
+}

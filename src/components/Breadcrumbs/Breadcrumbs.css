@@ -1,0 +1,10 @@
+.crumbs {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--chalk-dim-2);
+  margin-bottom: 14px;
+}
+
+.crumbs a:hover {
+  color: var(--chalk-yellow);
+}

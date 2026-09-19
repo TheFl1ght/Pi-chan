@@ -1,0 +1,8 @@
+.math-formula {
+  color: inherit;
+  overflow-wrap: break-word;
+  word-break: normal;
+  max-width: 100%;
+  min-width: 0;
+}
+

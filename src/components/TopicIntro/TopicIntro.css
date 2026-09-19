@@ -1,0 +1,53 @@
+.topic-intro {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin-bottom: 28px;
+}
+
+.topic-intro-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.topic-intro h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+.topic-intro-badge-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topic-formula {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  color: var(--accent);
+  background: var(--bg-tile);
+  border: 1px solid var(--border);
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.topic-formula::-webkit-scrollbar {
+  display: none;
+}
+
+.topic-formula .katex-display {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}

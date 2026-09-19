@@ -1,0 +1,65 @@
+:root {
+  --bg: #182019;
+  --bg-panel: #1f2822;
+  --bg-tile: #17201a;
+  --bg-header: #232e27;
+  --chalk-white: #f3efe6;
+  --chalk-dim: #93a099;
+  --chalk-dim-2: #6c776f;
+  --chalk-yellow: #e4c05f;
+  --chalk-blue: #86acc9;
+  --chalk-pink: #d98f8f;
+  --chalk-teal: #7fbfae;
+  --chalk-red: #d96a6a;
+  --border: #37423b;
+  --border-light: #46524a;
+  --radius: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px) 0 0 / 3px 3px,
+    var(--bg);
+  color: var(--chalk-white);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.hand {
+  font-family: 'Kalam', cursive;
+}
+
+.serif {
+  font-family: 'Fraunces', serif;
+}
+
+.katex {
+  font-size: 1.05em;
+}
+
+::selection {
+  background: var(--chalk-yellow);
+  color: #182019;
+}

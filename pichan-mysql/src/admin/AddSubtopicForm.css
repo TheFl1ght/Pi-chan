@@ -1,0 +1,79 @@
+.admin-add-toggle {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  background: transparent;
+  border: 1px dashed var(--accent, var(--chalk-yellow));
+  border-radius: var(--radius);
+  color: var(--accent, var(--chalk-yellow));
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.admin-add-toggle:hover {
+  background: rgba(228, 192, 95, 0.08);
+}
+
+.admin-add-form {
+  margin-top: 14px;
+  padding: 16px;
+  background: var(--bg-panel);
+  border: 1px solid var(--accent, var(--chalk-yellow));
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-add-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--chalk-dim);
+  cursor: pointer;
+}
+
+.admin-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  padding: 8px 14px;
+  border-radius: 2px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-tile);
+  color: var(--chalk-dim);
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.admin-btn:hover {
+  color: var(--chalk-white);
+  border-color: var(--chalk-white);
+}
+
+.admin-btn--primary {
+  border-color: var(--chalk-yellow);
+  color: var(--chalk-yellow);
+}
+
+.admin-btn--primary:hover {
+  background: rgba(228, 192, 95, 0.1);
+}
+
+.admin-btn--danger {
+  border-color: var(--chalk-pink);
+  color: var(--chalk-pink);
+}
+
+.admin-btn--danger:hover {
+  background: rgba(217, 143, 143, 0.1);
+}

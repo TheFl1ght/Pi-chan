@@ -1,0 +1,57 @@
+.disclosure {
+  margin-top: 12px;
+}
+
+.disclosure-toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  user-select: none;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.disclosure-toggle:hover {
+  opacity: 0.8;
+}
+
+.disclosure-toggle .chevron {
+  font-size: 11px;
+  transition: transform 0.15s;
+  display: inline-block;
+}
+
+.disclosure.open .disclosure-toggle .chevron {
+  transform: rotate(90deg);
+}
+
+.disclosure-content {
+  display: none;
+  margin-top: 10px;
+  padding: 14px 16px;
+  background: var(--bg-tile);
+  border-left: 2px solid var(--accent);
+  border-radius: 2px;
+}
+
+.disclosure.open .disclosure-content {
+  display: block;
+}
+
+.disclosure-content p {
+  margin: 0;
+  color: var(--chalk-dim);
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.disclosure-content .example-steps {
+  margin: 0;
+}

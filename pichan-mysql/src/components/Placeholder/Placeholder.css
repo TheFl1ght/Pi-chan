@@ -1,0 +1,29 @@
+.placeholder {
+  border: 1px dashed var(--border-light);
+  border-radius: var(--radius);
+  padding: 60px 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.placeholder .icon {
+  font-family: 'Fraunces', serif;
+  font-size: 56px;
+  color: var(--accent, var(--chalk-yellow));
+  margin-bottom: 14px;
+}
+
+.placeholder h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+.placeholder p {
+  color: var(--chalk-dim);
+  font-family: 'Kalam', cursive;
+  font-size: 16px;
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.5;
+}

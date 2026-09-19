@@ -1,0 +1,32 @@
+.page-header {
+  margin-bottom: 10px;
+}
+
+.title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.title-row h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.title-slash {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+  font-size: 20px;
+}
+
+.page-desc {
+  color: var(--chalk-dim);
+  font-size: 14.5px;
+  max-width: 640px;
+  line-height: 1.55;
+  margin: 0 0 6px;
+}

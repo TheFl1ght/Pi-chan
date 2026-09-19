@@ -1,0 +1,25 @@
+.practice-item {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.practice-item .practice-label {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.practice-item .practice-problem {
+  background: var(--bg-tile);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 12px 16px;
+  margin: 0;
+  color: var(--chalk-white);
+  font-size: 14.5px;
+  overflow-x: auto;
+}

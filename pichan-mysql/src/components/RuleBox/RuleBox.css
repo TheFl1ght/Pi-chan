@@ -1,0 +1,22 @@
+.rule-box {
+  background: var(--bg-tile);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin: 0 0 18px;
+}
+
+.rule-box .rule-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--chalk-dim-2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.rule-box .rule-formula {
+  font-family: 'Fraunces', serif;
+  font-size: 19px;
+  color: var(--accent);
+}

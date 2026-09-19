@@ -1,0 +1,12 @@
+.practice-group-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--chalk-dim-2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 24px 0 12px;
+}
+
+.practice-group-label:first-child {
+  margin-top: 0;
+}

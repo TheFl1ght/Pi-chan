@@ -1,0 +1,7 @@
+.material-text {
+  color: var(--chalk-dim);
+  font-size: 15px;
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 14px 0 0;
+}

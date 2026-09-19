@@ -1,0 +1,305 @@
+.row-card {
+  background: var(--bg-tile);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 11px 16px;
+  cursor: pointer;
+  transition: 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.row-card:hover {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.row-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--chalk-dim-2);
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.row-formula {
+  font-family: 'Fraunces', serif;
+  font-size: 15px;
+  color: var(--accent);
+  flex-shrink: 0;
+  min-width: 120px;
+}
+
+.row-title {
+  font-family: 'Fraunces', serif;
+  font-size: 15.5px;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.row-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  flex-shrink: 0;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1.2;
+}
+
+.row-status--dev {
+  color: var(--chalk-yellow);
+}
+
+.row-status--soon {
+  color: var(--chalk-red);
+}
+
+.row-status--ready {
+  color: var(--chalk-teal);
+}
+
+.row-status--new {
+  color: var(--chalk-blue);
+}
+
+.row-status--updated {
+  color: var(--chalk-pink);
+}
+
+.row-status--editable {
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.row-status--editable:hover {
+  filter: brightness(1.25);
+  box-shadow: 0 0 0 1px currentColor;
+  transform: translateY(-1px);
+}
+
+.row-badge-edit-icon {
+  font-size: 10px;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+}
+
+.row-status--editable:hover .row-badge-edit-icon {
+  opacity: 1;
+}
+
+.row-add-badge-btn {
+  background: transparent;
+  border: 1px dashed var(--chalk-dim-2);
+  color: var(--chalk-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+  flex-shrink: 0;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.row-add-badge-btn:hover {
+  border-color: var(--accent);
+  color: var(--chalk-white);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.badge-editor-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.badge-editor-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 100;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 280px;
+  max-width: 320px;
+  cursor: default;
+}
+
+.badge-editor-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--chalk-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-editor-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badge-preset-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: var(--chalk-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  padding: 3px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+
+.badge-preset-btn:hover {
+  color: var(--chalk-white);
+  border-color: var(--chalk-dim);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.badge-editor-colors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-color-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.12s;
+  padding: 0;
+}
+
+.badge-color-dot:hover {
+  transform: scale(1.15);
+}
+
+.badge-color-dot.active {
+  border-color: #fff;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.6);
+  transform: scale(1.2);
+}
+
+.badge-editor-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.row-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--chalk-dim-2);
+  flex-shrink: 0;
+}
+
+.row-del-wrapper {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.row-del-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--chalk-dim-2);
+  font-size: 14px;
+  line-height: 1;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.row-del-btn:hover {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.row-del-confirm-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 4px;
+}
+
+.row-del-confirm-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #f87171;
+  white-space: nowrap;
+}
+
+.row-del-btn-confirm {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.row-del-btn-confirm:hover {
+  background: #dc2626;
+}
+
+.row-del-btn-cancel {
+  background: transparent;
+  color: var(--chalk-dim);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.row-del-btn-cancel:hover {
+  color: var(--chalk-white);
+  border-color: var(--chalk-dim);
+}
+
+@media (max-width: 640px) {
+  .row-formula {
+    display: none;
+  }
+  .row-card {
+    flex-wrap: wrap;
+  }
+}
